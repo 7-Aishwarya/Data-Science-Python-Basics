@@ -27,3 +27,9 @@ np.power(a,2)
 np.power(b,3)
 
 np.power(a,b)
+x= np.array([i for i in range (10)])
+x
+np.where(x%2==0 ,'Even','Odd')
+cond_list= [x<5,x>5]
+choice_list = [x**2,x**5]
+np.select(cond_list,choice_list,default=x)
